@@ -1,0 +1,8 @@
+{
+  "timesteps": 500000,
+  "seed": 42,
+  "elapsed_seconds": 6292.2,
+  "total_episodes": 500,
+  "mean_pnl": 35.34,
+  "sharpe": 59.743
+}
