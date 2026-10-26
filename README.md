@@ -1,6 +1,6 @@
 # RL Market Maker
 
-A production-grade **Reinforcement Learning market-making agent** trained with Soft Actor-Critic (SAC) on a simulated Limit Order Book (LOB). The agent learns optimal bid/ask spread quoting under realistic market microstructure constraints — adverse selection, inventory risk, and market impact.
+A **Reinforcement Learning market-making agent** trained with Soft Actor-Critic (SAC) on a simulated Limit Order Book (LOB). The agent learns optimal bid/ask spread quoting under realistic market microstructure constraints — adverse selection, inventory risk, and market impact.
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.1-orange)
@@ -9,7 +9,7 @@ A production-grade **Reinforcement Learning market-making agent** trained with S
 
 ## What It Does
 
-Most ML projects predict prices. This one **makes markets** — continuously quoting bid and ask prices to earn the spread while managing inventory risk, exactly like a prop trading desk or HFT firm.
+Most ML projects predict prices. This one **makes markets** — continuously quoting bid and ask prices to earn the spread while managing inventory risk.
 
 The SAC agent learns to:
 - Quote tight spreads when order flow is uninformed (earn more)
@@ -23,7 +23,6 @@ The SAC agent learns to:
 |--------|-------|
 | Training timesteps | 500,000 |
 | Mean episode PnL | **$35.34** |
-| Sharpe ratio | **59.7** |
 | Environment throughput | **30,000+ steps/sec** |
 | API response latency | <100ms |
 
